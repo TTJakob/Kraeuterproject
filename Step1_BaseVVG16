@@ -6,20 +6,22 @@ conv_base = VGG16(weights='imagenet',
                   include_top=False,
                   input_shape=(150, 150, 3))
                   
-conv_base.summary()
+conv_base.summary()#shows the structure of our convolutional base
 
 import os
 import numpy as np
 from keras.preprocessing.image import ImageDataGenerator
 
-base_dir = 'E:/Bilder/Uni/Kraeuterprjekt'
+base_dir = 'E:/Pictures/...../Kraeuterprjekt' #Main directory with all the pictures in it
 
 train_dir = os.path.join(base_dir, 'train')
 validation_dir = os.path.join(base_dir, 'val')
 #test_dir = os.path.join(base_dir, 'test')
 
 datagen = ImageDataGenerator(rescale=1./255)
-batch_size = 12
+batch_size = 12 #has to match the Picture count used later
+
+#we need to reshape to an array that the base can use
 
 def extract_features(directory, sample_count):
     features = np.zeros(shape=(sample_count, 4, 4, 512))
@@ -41,13 +43,15 @@ def extract_features(directory, sample_count):
             break
     return features, labels
 
-train_features, train_labels = extract_features(train_dir, 456)
-validation_features, validation_labels = extract_features(validation_dir, 228)
+train_features, train_labels = extract_features(train_dir, 456) #number of pictures you want to use form the train folder
+validation_features, validation_labels = extract_features(validation_dir, 228) #number of pictures you want to use form the val folder
 #test_features, test_labels = extract_features(test_dir, 20)
 
 train_features = np.reshape(train_features, (456, 4 * 4 * 512))
 validation_features = np.reshape(validation_features, (228, 4 * 4 * 512))
 #test_features = np.reshape(test_features, (20, 4 * 4 * 512))
+
+#training the model
 
 from keras import models
 from keras import layers
@@ -66,7 +70,9 @@ history = model.fit(train_features, train_labels,
                     epochs=30,
                     batch_size=12,
                     validation_data=(validation_features, validation_labels))
-                    %matplotlib inline
+                    
+#showing the curves for the training results                    
+%matplotlib inline
 import matplotlib.pyplot as plt
 
 acc = history.history['acc']
