@@ -3,7 +3,7 @@ Deeplearning with herbs and mushrooms
 
 1.1
 
-Adding a 3. class (other) and changeing to a categorical class mode.
+Adding a 3. class (other) and changeing to categorical class mode.
 
 Also testing different convolution models to search for the best results
 
