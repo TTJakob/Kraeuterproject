@@ -70,6 +70,7 @@ Give an example
 ### Sources
 
 François Chollet’s and J.J. Allaire’s book Deep Learning with Python
+
 https://tensorflow.rstudio.com/blog/keras-image-classification-on-small-datasets.html
 ```
 Give an example
