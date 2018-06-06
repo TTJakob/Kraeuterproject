@@ -1,7 +1,7 @@
 # Kraeuterproject
 Deeplearning with herbs and mushrooms
 
-![alt text](https://github.com/TTJakob/Kraeuterproject/blob/1.1/3VVG16.PNG)
+![Ergebnisse VGG16](https://github.com/TTJakob/Kraeuterproject/blob/1.1/3VVG16.PNG)
 
 
  
@@ -28,7 +28,7 @@ Ive did this project on Anaconda useing Tensorflow and Keras
 
 Transfer learning is used to build highly accurate computer vision models for your custom purposes, even when you have relatively little data. Transfer learning uses a pre-trained network and only train a custom classifier that reduces development and training time and provides good results.
 
-![lt text](https://tensorflow.rstudio.com/blog/images/keras-pretrained-convnet/swapping_fc_classifier.png)
+![Transfer Learning](https://tensorflow.rstudio.com/blog/images/keras-pretrained-convnet/swapping_fc_classifier.png)
 
 A pre-trained network is simply a saved network previously trained on a large dataset, typically on a large-scale image classification task. If this original dataset is large enough and general enough, then the features learned by the pre-trained network can effectively act as a generic model of our visual world in therms of identifying shapes and objects and extract different features out of a picture. So one pre-trained model/convolutional base can prove useful for many different computer vision problems.
 
@@ -67,10 +67,10 @@ Explain what these tests test and why
 Give an example
 ```
 
-### And coding style tests
+### Sources
 
-Explain what these tests test and why
-
+François Chollet’s and J.J. Allaire’s book Deep Learning with Python
+https://tensorflow.rstudio.com/blog/keras-image-classification-on-small-datasets.html
 ```
 Give an example
 ```
