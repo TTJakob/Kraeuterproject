@@ -63,4 +63,4 @@ Give an example
 
 ## Authors
 
-* **Tim Jakob** - *Idear and start up work* - [
+* **Tim Jakob** - *Idear and start up work* - TTJakob
