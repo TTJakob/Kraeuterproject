@@ -9,13 +9,29 @@ Deeplearning with herbs and mushrooms
 xxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 
-## Getting Started
+## Getting Started und Idee
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+Auf die Idee kam ich eig schon länger als mein Opa der sehr aktiv im Bereich Wald Holz und Natur ist Pilze sammelte und mir danach verschiedene Pilze und Kräuter aus einem Buch und seinem Gedächtniss benannte.
+
+So kam mir die Idee den Lernaufwand dafür zu verringern und Sammlern einen einfachen und effektiven Weg zu geben ihre gesammelten Pilze und Kräuter zu Identifizieren.
+
+Natürlich ist es etwas ambitioniert direkt alle verschiedenen Pilze und Kräuter erkennen zu wollen und Fehler bei der Bestimmung können z.B. beim Knollenblätterpilz sogar tötlich enden.
+
+Deswegen als "Grundprojekt" erstmal die Abgrezung von Pilzen und Kräutern voneinander und von anderen (Other Class).
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+Ive did this project on Anaconda useing Tensorflow and Keras
+
+## Transfer learning
+
+Transfer learning is used to build highly accurate computer vision models for your custom purposes, even when you have relatively little data. Transfer learning uses a pre-trained network and only train a custom classifier that reduces development and training time and provides good results.
+
+![lt text](https://tensorflow.rstudio.com/blog/images/keras-pretrained-convnet/swapping_fc_classifier.png)
+
+A pre-trained network is simply a saved network previously trained on a large dataset, typically on a large-scale image classification task. If this original dataset is large enough and general enough, then the features learned by the pre-trained network can effectively act as a generic model of our visual world in therms of identifying shapes and objects and extract different features out of a picture. So one pre-trained model/convolutional base can prove useful for many different computer vision problems.
+
 
 ```
 Give examples
@@ -23,7 +39,7 @@ Give examples
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+The first thing after the Anaconda enviroment was was to accquire the Pictures to execute the transfer learning 
 
 Say what the step will be
 
