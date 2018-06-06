@@ -6,6 +6,11 @@ Deeplearning with herbs and mushrooms
 
 <br />
 Markdown can be configured to produce HTML-style tags; e.g.:
+<MTMarkdownOptions output='raw'>
+    ... put your entry content here ...
+     ... put your entry content here ...
+     ... put your entry content here ... ... put your entry content here ... ... put your entry content here ... ... put your entry content here ... ... put your entry content here ... ... put your entry content here ... ... put your entry content here ... ... put your entry content here ... ... put your entry content here ... ... put your entry content here ... ... put your entry content here ... ... put your entry content here ... ... put your entry content here ...
+</MTMarkdownOptions>
 
 <br>
 
