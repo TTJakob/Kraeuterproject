@@ -117,7 +117,39 @@ Trainable params: 14,714,688
 Non-trainable params: 0
 _________________________________________________________________
 ```
+We dont want want to Train all 14 Million parameters (and imagenet provides allready trained parameters for the VGG16 Network)
 
+We only need to add and train our custom classifier
+
+```
+conv_base.trainable = False
+
+model = models.Sequential()
+model.add(conv_base)
+model.add(layers.Flatten())
+#model.add(layers.Dropout(0.15))
+model.add(layers.Dense(256, activation='relu'))
+model.add(layers.Dense(1, activation='sigmoid'))
+```
+so our model now looks like this
+```
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+vgg16 (Model)                (None, 4, 4, 512)         14714688  
+_________________________________________________________________
+flatten_5 (Flatten)          (None, 8192)              0         
+_________________________________________________________________
+dense_11 (Dense)             (None, 256)               2097408   
+_________________________________________________________________
+dense_12 (Dense)             (None, 1)                 257       
+=================================================================
+Total params: 16,812,353
+Trainable params: 2,097,665
+Non-trainable params: 14,714,688
+_________________________________________________________________
+
+```
 ### Break down into end to end tests
 
 Explain what these tests test and why
