@@ -64,7 +64,7 @@ I have used the VGG16 with the "Cats vs Dogs" usecase which is desinged for, as 
 If this neural network can predict if the picture displayes a cat or a dog we may can tweek it to identify champignon (mushroom) from cress.
 
 <p align="center">
-<img src="https://github.com/TTJakob/Kraeuterproject/blob/pictures/champ019.jpg" width="250" height="250" /> <img src="https://vignette.wikia.nocookie.net/mortalkombat/images/6/64/Vs.png/revision/latest?cb=20150319161124&path-prefix=de" align="top" width="150" height="150" />  <img src="https://github.com/TTJakob/Kraeuterproject/blob/pictures/kresse004.jpg" width="250" height="250" />
+<img src="https://github.com/TTJakob/Kraeuterproject/blob/pictures/champ019.jpg" width="250" height="250" /> <img src="https://vignette.wikia.nocookie.net/deathbattle/images/4/47/VS.png/revision/latest?cb=20160727174407" width="150" height="150" />  <img src="https://github.com/TTJakob/Kraeuterproject/blob/pictures/kresse004.jpg" width="250" height="250" />
 </p>
 
 ### Break down into end to end tests
