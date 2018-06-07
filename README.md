@@ -127,7 +127,6 @@ conv_base.trainable = False
 model = models.Sequential()
 model.add(conv_base)
 model.add(layers.Flatten())
-#model.add(layers.Dropout(0.15))
 model.add(layers.Dense(256, activation='relu'))
 model.add(layers.Dense(1, activation='sigmoid'))
 ```
