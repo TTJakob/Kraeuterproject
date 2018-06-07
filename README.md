@@ -149,6 +149,11 @@ Non-trainable params: 14,714,688
 _________________________________________________________________
 
 ```
+So we use the power of 14 million pretrained parameters that can identifiy shapes and objects out of pictures perfectly,
+now we only need to train the last 2 million to identify if the picture shows a champingon or cress.
+
+So lets take a look at our results.
+
 ### Break down into end to end tests
 
 Explain what these tests test and why
