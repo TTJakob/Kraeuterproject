@@ -63,6 +63,8 @@ use an easy exisiting network that was close to my environment and only needed s
 I have used the VGG16 with the "Cats vs Dogs" usecase which is desinged for, as you guessed, distinguish cats and dogs.
 If this neural network can predict if the picture displayes a cat or a dog we may can tweek it to identify champignon (mushroom) from cress.
 
+<img src="https://github.com/TTJakob/Kraeuterproject/blob/pictures/champ019.jpg" width="200" height="400" />
+
 ![Champ](https://github.com/TTJakob/Kraeuterproject/blob/pictures/champ019.jpg | width=100) VS ![Cress](https://github.com/TTJakob/Kraeuterproject/blob/pictures/kresse004.jpg =250x250)
 
 ### Break down into end to end tests
