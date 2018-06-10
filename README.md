@@ -1,14 +1,6 @@
 # Kraeuterproject
 Deeplearning with herbs and mushrooms
 
-![Ergebnisse VGG16](https://github.com/TTJakob/Kraeuterproject/blob/1.1/3VVG16.PNG)
-
-
- 
- 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
-
 ## Getting Started und Idee
 
 
